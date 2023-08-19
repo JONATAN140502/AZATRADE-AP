@@ -9,8 +9,9 @@
                         <a href="#">Links</a>
                         <div class="header-menu">
                             <ul>
+                                <li><Router-Link to="/">Inicio</Router-Link></li>
                                 <li><a>Exportadores</a></li>
-                                <li><a>Importadores</a></li>
+                                <li><Router-Link to="/importaciones">Importadores</Router-Link></li>
                                 <li><a>Reg&iacute;strate</a></li>
                                 <li><a class="">Ingresar</a></li>
                             </ul>
@@ -569,8 +570,9 @@
 }
 </style>
 <script>
-export default {
+import { RouterLink } from 'vue-router'
 
+export default {
     data() {
         return {
             tabs: ['Productos', 'Partidas', 'Mercados', 'Empresas', 'Regiones', 'Sectores'],
@@ -581,51 +583,50 @@ export default {
             RegionesSelectVisible: false,
             SectoresSelectVisible: false,
             EmpresasSelectVisible: false,
-        }
+        };
     },
-
     methods: {
         handleTabClick(tab) {
-            this.activeTab = tab
-            this.ProductosSelectVisible = false
-            this.MercadosSelectVisible = false
-            this.PartidasSelectVisible = false
-            this.RegionesSelectVisible = false
-            this.SectoresSelectVisible = false
-            this.EmpresasSelectVisible = false
+            this.activeTab = tab;
+            this.ProductosSelectVisible = false;
+            this.MercadosSelectVisible = false;
+            this.PartidasSelectVisible = false;
+            this.RegionesSelectVisible = false;
+            this.SectoresSelectVisible = false;
+            this.EmpresasSelectVisible = false;
             if (tab === 'Productos') {
-                this.ProductosSelectVisible = true
-               this.activeTab=='Productos'
+                this.ProductosSelectVisible = true;
+                this.activeTab == 'Productos';
             }
             if (tab === 'Mercados') {
-                this.MercadosSelectVisible = true
-                this.activeTab=='Mercados'
+                this.MercadosSelectVisible = true;
+                this.activeTab == 'Mercados';
             }
             if (tab === 'Empresas') {
                 this.EmpresasSelectVisible = true;
-                this.activeTab=='Empresas';
+                this.activeTab == 'Empresas';
             }
             if (tab === 'Partidas') {
                 this.PartidasSelectVisible = true;
-                this.activeTab=='Partidas';
+                this.activeTab == 'Partidas';
             }
             if (tab === 'Regiones') {
                 this.RegionesSelectVisible = true;
-                this.activeTab=='Regiones';
+                this.activeTab == 'Regiones';
             }
             if (tab === 'Sectores') {
                 this.SectoresSelectVisible = true;
-                this.activeTab='Sectores';
+                this.activeTab = 'Sectores';
             }
-            console.log("tab"+tab +"...."+this.activeTab);
-            console.log("tab"+ this.ProductosSelectVisible);
-            console.log("tab"+this.MercadosSelectVisible );
-            console.log("tab"+this.PartidasSelectVisible);
-            console.log("tab"+ this.RegionesSelectVisible );
-            console.log("tab"+this.SectoresSelectVisible );
-            console.log("tab"+this.EmpresasSelectVisible );
+            console.log("tab" + tab + "...." + this.activeTab);
+            console.log("tab" + this.ProductosSelectVisible);
+            console.log("tab" + this.MercadosSelectVisible);
+            console.log("tab" + this.PartidasSelectVisible);
+            console.log("tab" + this.RegionesSelectVisible);
+            console.log("tab" + this.SectoresSelectVisible);
+            console.log("tab" + this.EmpresasSelectVisible);
         }
-    }
-
+    },
+    components: { RouterLink }
 }
 </script>
