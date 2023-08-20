@@ -1,3 +1,6 @@
+<style scoped>
+@import "../assets/css/global.css";
+</style>
 <template>
   <div class="page-wrapper">
     <Header/>
@@ -16,6 +19,7 @@
 </template>
 
 <script>
+import "../assets/js/global";
 import Header from '../views/Header.vue'
 import Footer from '../views/Footer.vue'
 import Lateral from '../views/Lateral.vue'
@@ -42,4 +46,3 @@ export default {
   }
 }
 </script>
-<style></style>

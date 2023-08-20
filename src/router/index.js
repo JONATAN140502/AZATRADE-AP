@@ -17,6 +17,7 @@ const routes = [
     component: Importaciones,
     
   }
+  
 //   {
 //     path: '/about',
 //     name: 'about',

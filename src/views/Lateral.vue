@@ -6,9 +6,9 @@
         >
           <h4 align="center"><b><u>Sectores</u></b></h4>
           <nav class="side-nav">
-            <ul class="menu menu-vertical sf-arrows">
-              <li class='item'>
-                <a href='sectores?dat=No%20tradicional&amp;year=Agropecuario' target='_blank' class='nombres'>Agropecuario</a>
+            <ul class="">
+              <li class='nav-link' v-bind="{listStyle: 'none'}">
+                <a href='sectores?dat=No%20tradicional&amp;year=Agropecuario' target='_blank' class=''>Agro</a>
               </li>
               <li class='item'>
                 <a href='sectores?dat=No%20tradicional&amp;year=Artesan%C3%ADas' target='_blank' class='nombres'>Artesanías</a>

@@ -9,7 +9,7 @@
                         <a href="#">Links</a>
                         <div class="header-menu">
                             <ul>
-                                <li><Router-Link to="/">Inicio</Router-Link></li>
+                                <li class="text-white"><Router-Link to="/">Inicio</Router-Link></li>
                                 <li><a>Exportadores</a></li>
                                 <li><Router-Link to="/importaciones">Importadores</Router-Link></li>
                                 <li><a>Reg&iacute;strate</a></li>
@@ -355,7 +355,9 @@
         </div>
     </div>
 </template>
+
 <style>
+@import "../assets/css/global.css";
 .header-search-wrappep {
     position: absolute;
     margin-top: 10px;

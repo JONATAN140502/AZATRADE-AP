@@ -1,0 +1,212 @@
+.header-search-wrappep {
+    position: absolute;
+    margin-top: 10px;
+}
+
+
+.header-search-wrappep {
+    position: absolute;
+    right: -2.3rem;
+    z-index: 999;
+    margin-top: 10px;
+    color: #8d8d8d;
+    height: 40px;
+}
+
+
+
+.header-search-wrappep select:focus {
+    outline: none
+}
+
+.header-search-wrappep .btn {
+    position: relative;
+    padding: 0 0 3px 0;
+    border: 0;
+    border-left: 1px solid #e7e7e7;
+    min-width: 48px;
+    color: #606669;
+    font-size: 16px;
+    background: #f7f7f7
+}
+
+
+.header-search-wrappep {
+    display: flex;
+    display: -ms-flex;
+    position: static;
+    margin: 0;
+    border-width: 0
+}
+
+.header-search-wrappep {
+    left: 15px;
+    right: 15px
+}
+
+/* **************************** estilo nuevo ************************* */
+.header-search-inlinep.header-searchp {
+    margin-right: 62.3rem
+}
+
+.header-search-inlinep.header-searchp {
+    margin-right: 62.3rem
+}
+
+.header-bottom.fixed .header-search-inlinep.header-searchp i {
+    font-size: 2.3rem
+}
+
+
+        
+.header-bottom.fixed .header-search-inlinep.header-searchp .header-search-wrappep {
+    position: absolute;
+    margin-top: 20px;
+}
+
+.header-searchp {
+    position: relative
+}
+
+.header-searchp form {
+    margin: 0
+}
+
+.header-searchp .form-control,
+.header-searchp select {
+    margin: 0;
+    border: 0;
+    color: inherit;
+    font-size: 1.3rem;
+    height: 100%;
+    box-shadow: none
+}
+
+.header-searchp .form-control,
+.header-searchp .select-customp {
+    background: #f7f7f7
+}
+
+@media (-ms-high-contrast:active),
+(-ms-high-contrast:none) {
+    .header-searchp .form-control {
+        flex: 1
+    }
+}
+
+.header-searchp .form-control::placeholder {
+    color: #a8a8a8
+}
+
+.header-searchp:not(.header-search-categoryp) .form-control {
+    border-radius: 5rem
+}
+
+.header-searchp:not(.header-search-categoryp) .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border: 0;
+    padding: 0 0.8em;
+    color: #333
+}
+
+.search-togglep:after {
+    position: absolute;
+    right: calc(50% - 10px);
+    bottom: -10px;
+    border: 0px solid transparent;
+    border-bottom-color: #08c
+}
+
+.header-search-categoryp .form-control {
+    border-radius: 5rem 0 0 5rem
+}
+
+.header-search-categoryp .btn {
+    border-radius: 0 5rem 5rem 0
+}
+
+ 
+.header-search-wrappep {
+    position: absolute;
+    z-index: 999;
+    margin-top: 10px;
+    color: #8d8d8d;
+    height: 40px;
+    border-radius: 5rem;
+    border: 0px solid #08c
+}
+
+.header-search-wrappep:after {
+    clear: both;
+    content: ""
+}
+
+.header-search-wrapper .btn {
+    position: relative;
+    padding: 0 0 3px 0;
+    border: 0;
+    border-left: 1px solid #e7e7e7;
+    min-width: 48px;
+    color: #606669;
+    font-size: 16px;
+    background: #f7f7f7
+}
+
+.header-search-wrappep .btn:before {
+    margin-top: 5px;
+    font-weight: 800
+}
+
+.header-search-popup .form-control {
+    min-width: 266px;
+    padding: 4px 22px;
+    font-size: 1.4rem;
+    line-height: 20px
+}
+
+.header-search-popupp .form-control:focus {
+    border: #e7e7e7
+}
+
+.header-search-inlinep .form-control {
+    min-width: 21rem;
+    padding: 1rem 2rem
+}
+
+@media (min-width:992px) {
+
+    .header-search-inlinep .btn:after,
+    .header-search-inlinep .search-togglep {
+        display: none
+    }
+
+    .header-search-inlinep.header-searchp .header-search-wrappep {
+        display: flex;
+        display: -ms-flex;
+        position: static;
+        margin: 0;
+        border-width: 0
+    }
+}
+
+@media (max-width:767px) {
+    .header-searchp .form-control {
+        min-width: 17rem
+    }
+}
+
+@media (max-width:575px) {
+    .header-search-wrappep {
+        left: 15px;
+        right: 15px
+    }
+}
+
+.header-rightp {
+    padding-right: 22.6rem
+}
+
