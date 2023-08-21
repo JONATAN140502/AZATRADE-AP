@@ -224,6 +224,7 @@
   </div>
 </div></template>
 <script>
+//import { jquery, jquerySlim, plugins, bootstrapBundle, jqueryNumerator, jqueryAppear, nouislider, popper, azaMain, all, main } from '@/assets/js/utils.js';
 export default {
   name: 'Principal',
 

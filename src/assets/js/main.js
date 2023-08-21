@@ -580,9 +580,11 @@ function(t) {
                 s = function(e, n, o) {
                     e.hasClass("fixed") || (e.parent().css("min-height", n.height), i.filter(".fixed").each((function() {
                         o += t(this).outerHeight()
-                    })), e.addClass("fixed").css("top", -n.height).animate({
-                        top: o
-                    }), e.find(".product-action").removeClass("d-none"))
+                    })), 
+                    // e.addClass("fixed").css("top", -n.height).animate({
+                    //     top: o
+                    // }), 
+                    e.find(".product-action").removeClass("d-none"))
                 },
                 a = function(t, e) {
                     t.hasClass("fixed") && (t.removeClass("fixed"), t.css("top", ""), t.parent().css("min-height", ""), !t.find(".product-action").hasClass("d-none") > 0 && t.find(".product-action").addClass("d-none"))

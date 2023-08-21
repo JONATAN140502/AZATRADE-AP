@@ -1,3 +1,4 @@
+
 <template>
     <div class="row">
         ESTA ES UAN PRUEBA DE CARGa 001
@@ -261,6 +262,7 @@
     </div>
 </template>
 <script>
+//import "@/assets/js/global.js";
 export default {
 name: 'Importaciones',
 created() {

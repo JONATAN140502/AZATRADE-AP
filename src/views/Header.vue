@@ -1,5 +1,6 @@
 <template>
     <div class="header home">
+        
         <div class="header-top bg-primary text-uppercase">
             <div class="container">
 
@@ -54,17 +55,15 @@
 
         <div class="tabs tabs-simple">
             <ul class="nav nav-tabs justify-content-center" role="tablist">
-                <li class="nav-item" v-for="tab in tabs" :key="tab"
-                    >
-                    <a class="nav-link" :class="{ 'active': tab === activeTab }" id="tab-customer" data-toggle="tab" role="tab"
-                    aria-controls="customer-content" aria-selected="true" @click="handleTabClick(tab)">{{ tab }}</a>
+                <li class="nav-item" v-for="tab in tabs" :key="tab">
+                    <a class="nav-link" :class="{ 'active': tab === activeTab }" id="tab-customer" data-toggle="tab"
+                        role="tab" aria-controls="customer-content" aria-selected="true" @click="handleTabClick(tab)">{{ tab
+                        }}</a>
                 </li>
             </ul>
             <div class="tab-content">
-                <div class="tab-pane fade show active text-center"
-                 id="customer-content" role="tabpanel"
-                    aria-labelledby="tab-customer"
-                     v-if="ProductosSelectVisible===true">
+                <div class="tab-pane fade show active text-center" id="customer-content" role="tabpanel"
+                    aria-labelledby="tab-customer" v-if="ProductosSelectVisible === true">
                     <div class="container">
                         <div class="header-right w-lg-max pl-2">
                             <div class="header-searchp header-iconp header-search-inlinep header-search-categoryp w-lg-max"
@@ -97,10 +96,8 @@
                     </div>
 
                 </div>
-                <div class="tab-pane fade show active text-center"
-                 id="customer-content" role="tabpanel"
-                    aria-labelledby="tab-customer"
-                     v-if="MercadosSelectVisible===true">
+                <div class="tab-pane fade show active text-center" id="customer-content" role="tabpanel"
+                    aria-labelledby="tab-customer" v-if="MercadosSelectVisible === true">
                     <div class="container">
                         <div class="header-right w-lg-max pl-2">
                             <div class="header-searchp header-iconp header-search-inlinep header-search-categoryp w-lg-max"
@@ -140,10 +137,8 @@
                     </div>
                 </div>
 
-                <div class="tab-pane fade show active text-center"
-                 id="customer-content" role="tabpanel"
-                    aria-labelledby="tab-customer"
-                     v-if="EmpresasSelectVisible===true">
+                <div class="tab-pane fade show active text-center" id="customer-content" role="tabpanel"
+                    aria-labelledby="tab-customer" v-if="EmpresasSelectVisible === true">
                     <div class="container">
                         <div class="header-left col-lg-2 w-auto pl-0">
                         </div>
@@ -153,11 +148,11 @@
                                 <div class="header-search-wrappep">
                                     <input type="hidden" id="buscasql3" name="buscasql3" value="empre">
                                     <div class="">
-                                                <select id='cate2' name="cate2" lang="es"
-                                                    style="border-radius: 80px 20px 5px 90px; background-color:#F4F4F4;">
-                                                    <option value=''>- Buscar Empresa-</option>
-                                                </select>
-                                            </div>
+                                        <select id='cate2' name="cate2" lang="es"
+                                            style="border-radius: 80px 20px 5px 90px; background-color:#F4F4F4;">
+                                            <option value=''>- Buscar Empresa-</option>
+                                        </select>
+                                    </div>
                                     <div class="select-customp">
                                         <select id="year3" name="year3">
                                             <option value="2023">2023</option>
@@ -180,10 +175,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade show active text-center"
-                 id="customer-content" role="tabpanel"
-                    aria-labelledby="tab-customer"
-                     v-if="PartidasSelectVisible===true">
+                <div class="tab-pane fade show active text-center" id="customer-content" role="tabpanel"
+                    aria-labelledby="tab-customer" v-if="PartidasSelectVisible === true">
 
                     <div class="container">
                         <div class="header-left col-lg-2 w-auto pl-0">
@@ -220,10 +213,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade show active text-center"
-                 id="customer-content" role="tabpanel"
-                    aria-labelledby="tab-customer"
-                     v-if="RegionesSelectVisible===true">
+                <div class="tab-pane fade show active text-center" id="customer-content" role="tabpanel"
+                    aria-labelledby="tab-customer" v-if="RegionesSelectVisible === true">
                     <div class="container">
                         <div class="header-left col-lg-2 w-auto pl-0">
                         </div>
@@ -284,10 +275,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade show active text-center"
-                 id="customer-content" role="tabpanel"
-                    aria-labelledby="tab-customer"
-                     v-if="SectoresSelectVisible===true">
+                <div class="tab-pane fade show active text-center" id="customer-content" role="tabpanel"
+                    aria-labelledby="tab-customer" v-if="SectoresSelectVisible === true">
                     <div class="container">
                         <div class="header-left col-lg-2 w-auto pl-0">
                         </div>
@@ -358,6 +347,7 @@
 
 <style>
 @import "../assets/css/global.css";
+
 .header-search-wrappep {
     position: absolute;
     margin-top: 10px;

@@ -1,4 +1,4 @@
-<style scoped>
+<style>
 @import "../assets/css/global.css";
 </style>
 <template>
@@ -19,7 +19,8 @@
 </template>
 
 <script>
-import "../assets/js/global";
+//import '../js/jquery-3.7.0.min.js'; // Importa jQuery
+
 import Header from '../views/Header.vue'
 import Footer from '../views/Footer.vue'
 import Lateral from '../views/Lateral.vue'
@@ -44,5 +45,7 @@ export default {
   methods: {
    
   }
+  
 }
+
 </script>

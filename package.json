@@ -8,9 +8,9 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.1",
+    "bootstrap": "4.1",
     "core-js": "^3.8.3",
-    "jquery": "^3.7.0",
+    "jquery": "^3.2.1",
     "jquery-countdown": "^2.2.0",
     "jquery-numerator": "^0.2.1",
     "jquery.appear": "^1.0.1",
